@@ -6,4 +6,10 @@ const Home: React.FC = () => {
   );
 };
 
+const element = (
+  <div>
+    <FontAwesomeIcon icon={'function'} />
+  </div>
+);
+
 export default Home;
