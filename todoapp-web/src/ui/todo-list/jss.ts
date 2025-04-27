@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TodoListContainer = styled.div`
+export const TodoListContainerJss = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;

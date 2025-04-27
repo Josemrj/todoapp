@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TodoItemContainerUi = styled.div`
+export const TodoItemContainerJss = styled.div`
   display: flex;
   align-items: center;
   background-color: #f8f8f8;
@@ -12,7 +12,7 @@ export const TodoItemContainerUi = styled.div`
   width: 100%;
 `;
 
-export const ActionsContainerUi = styled.div`
+export const ActionsContainerJss = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 10px;

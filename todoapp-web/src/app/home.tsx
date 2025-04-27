@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   );
 };
 
-// Use FontAwe
+// Ex. use FontAwesome
 const element = (
   <div>
     <i className="fas fa-check" style={{ marginLeft: 8 }}></i>
