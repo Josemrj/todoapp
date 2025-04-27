@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const InputCoStyle = styled.input`
+export const InputUiStyle = styled.input`
   type: text;
   border: 1px solid #ccc;
   border-radius: 5px;

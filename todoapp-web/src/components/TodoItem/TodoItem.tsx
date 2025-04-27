@@ -1,5 +1,5 @@
 import React from 'react';
-import { TodoItemStyle, ActionsContainer } from './styles';
+import { TodoItemContainerUi, ActionsContainerUi } from './styles';
 
 interface Todo {
   id: number;
@@ -7,21 +7,23 @@ interface Todo {
   completed: boolean;
 }
 
-interface TodoItemProps {
+interface TodoItemUiProps {
   todo: Todo;
 }
 
-const TodoItem: React.FC<TodoItemProps> = ({ todo }) => {
+const TodoItemUi: React.FC<TodoItemUiProps> = ({
+  todo
+}) => {
   return (
-    <TodoItemStyle>
+    <TodoItemContainerUi>
       <input type="checkbox" checked={todo.completed} readOnly />
       <span>{todo.text}</span>
-      <ActionsContainer>
+      <ActionsContainerUi>
         <div>Edit</div>
         <div>Delete</div>
-      </ActionsContainer>
-    </TodoItemStyle>
+      </ActionsContainerUi>
+    </TodoItemContainerUi>
   );
 };
 
-export default TodoItem;
+export default TodoItemUi;

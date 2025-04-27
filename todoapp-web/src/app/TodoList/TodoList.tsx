@@ -1,24 +1,24 @@
 import React from 'react';
-import { TodoItem } from '../../components';
-import { ListContainer } from './styles';
+import TodoItemUi from '../../components/TodoItem/TodoItem';
+import { TodoListContainer } from './styles';
 
-interface Todo {
+interface TodoProps {
   id: number;
   text: string;
   completed: boolean;
 }
 
 interface TodoListProps {
-  todos: Todo[];
+  todos: TodoProps[];
 }
 
 const TodoList: React.FC<TodoListProps> = ({ todos }) => {
   return (
-    <ListContainer>
+    <TodoListContainer>
       {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} />
+        <TodoItemUi key={todo.id} todo={todo} />
       ))}
-    </ListContainer>
+    </TodoListContainer>
   );
 };
 
